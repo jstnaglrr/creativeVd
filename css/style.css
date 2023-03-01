@@ -535,42 +535,40 @@ nav ul li{
 }
 /*********** END SERVICES BANNER 4 CSS ************/
 
-.banner_updates {
-    padding: 3rem 0;
-  
+.section2_update{
+    padding: 6rem 0;
+    background-color: var(--white);
 }
-.banner__updateWrapper {
+.section3_updateWrapper {
     display: flex;
     align-items: center;
     gap: 4rem;
 }
-.banner_updates h1 {
+.section2_updateHeading h1 {
+    margin-top: 3rem;
     color: var(--primary);
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1;
 }
-.banner_update p {
-    color: var(--black);
-    font-size: 15px;
-    padding: 0;
+.section2_updateHeading p {
     text-align: justify;
-    margin-top: 0.4rem;
-}
-.banner_updateContent img{
-    margin-top: 5rem;
-}
-.banner_updateContent{
-    display: grid;
-    align-items: center;
-}
-.banner_updateContentLinks{
-    align-items: center;
-}
-.banner_updateContent ul li a{
-    text-decoration: none;
-    list-style: none;
     color: var(--black);
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}  
+.imggg{
+    display: flex;
+    gap: 4rem;
+}
+.socialww{
+    display: flex;
+    text-align: center;
+    gap: 10rem;
+}
+.socialww h2{
+    display: flex;
+    font-size: .6rem;
+    color: var(--black);
+    gap: 0.6rem;
+    margin-top: 2rem;
 }
