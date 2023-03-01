@@ -571,6 +571,6 @@ nav ul li{
     list-style: none;
     color: var(--black);
     display: grid;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
