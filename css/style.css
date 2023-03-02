@@ -84,10 +84,14 @@ nav ul li a:hover{
     .toggle_menu {
         display: block;
     }
+    nav.open ul{
+    left: 0;
+    }
     nav ul{
+    background-color: var(--white);
     display: block;
     position: absolute;
-    left: 0;
+    right: -100%;
     top: 6.5rem;
     height: 100%;
     width: 100%;
@@ -556,19 +560,24 @@ nav ul li{
     margin-top: 1rem;
     margin-bottom: 4rem;
 }  
-.imggg{
-    display: flex;
-    gap: 4rem;
+.section2_updateContent{
+    display: grid;
+    gap: 3rem;
 }
-.socialww{
+.section2_updateContent img{
+    width: 760px;
+}
+.section2_socialLinks{
     display: flex;
     text-align: center;
     gap: 10rem;
 }
-.socialww h2{
-    display: flex;
-    font-size: .6rem;
+.section2_socialLinks ul li a{ 
+    list-style: none;
+    text-decoration: none;  
+    align-items: center;
     color: var(--black);
-    gap: 0.6rem;
-    margin-top: 2rem;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 11px;;
 }
