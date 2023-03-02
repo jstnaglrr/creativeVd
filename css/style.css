@@ -78,6 +78,8 @@ nav ul li a:hover{
     width: 2rem;
     margin-bottom: 0.4rem;
     border-radius: 0.5rem;
+    transition: 0.5s ease-in;
+
 }
 @media (max-width: 768px) {
     .toggle_menu {
@@ -88,16 +90,16 @@ nav ul li a:hover{
     right: -50%;
     transition: 0.5s ease-in;
     }
-    nav ul {  
-    display: block;
-    position: absolute;
-    right: -100%;
-    top: 6.6rem;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    text-align: left;
-    transition: 0.5s ease-in;
+    nav ul {
+        display: block;
+        position: absolute;
+        right: -100%;
+        top: 6.6rem;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        text-align: left;
+        transition: 0.5s ease-in;
     }
     nav ul li a {
     display: block;
@@ -111,6 +113,18 @@ nav ul li a:hover{
     }
     nav ul li:hover a {
     color: var(--black);
+    }
+    .toggle_menu.open span:nth-child(1){
+        transition: 0.5s ease;
+        transform: translate(-2px, 7.3px) rotate(45deg);
+    }
+    .toggle_menu.open span:nth-child(2){
+       opacity: 0;
+       transition: 0s;
+    }
+    .toggle_menu.open span:nth-child(3){
+        transition: 0.5s ease;
+        transform: translate(-2px, -12px) rotate(-45deg);
     }
 }
 
