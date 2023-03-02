@@ -10,8 +10,7 @@
     --white: #ffffff;
 }
 body{
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    font-family: 'Poppins', sans-serif; 
 }
 
 @media (min-width: 768px) {
@@ -34,13 +33,14 @@ body{
 header{
     background-color: var(--black);
     padding: 1rem 0;
+    position: fixed;
+    width: 100%;
 }
 .container{
     max-width: 112rem;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
-
 .header__wrapper{
     display: flex;
     justify-content: space-between;
@@ -67,13 +67,10 @@ nav ul li a{
 nav ul li a:hover{
     color: var(--primary)
 }
-/* nav ul li a:active{
-    color: var(--primary);
-} */
 .toggle_menu {
     cursor: pointer;
     display: none;
-}
+}   
 .toggle_menu span {
     background-color: var(--primary);
     display: block;
@@ -95,7 +92,7 @@ nav ul li a:hover{
     display: block;
     position: absolute;
     right: -100%;
-    top: 6.5rem;
+    top: 6.6rem;
     height: 100%;
     width: 100%;
     background-color: white;
@@ -121,7 +118,7 @@ nav ul li a:hover{
 
 /*********** BANNER CSS ************/
 .banner{
-    padding: 6rem 0;
+    padding: 10rem;
 }
 .banner__wrapper{
     display: flex;
@@ -299,35 +296,29 @@ nav ul li a:hover{
 /*********** END SECTION 5 CSS ************/
 
 /*********** FOOTER CSS ************/
-footer{
+.footer {
     background-color: var(--black);
-    padding: 3rem;
+    color: var(--gray);
+    padding: 3rem 0;
 }
-.container{
-    max-width: 112rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+.footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 }
-.footer__wrapper{
+.footer ul li a i {
+    font-size: 1.5rem;
+    color: var(--gray);
+    text-align: left;
+}
+.footer_links {
+    display: flex;
+    gap: 1rem;
+}
+.footer_wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-nav ul li{
-    display: grid;
-    color: var(--gray);
-    align-items: center;
-}
-.footer__links{
-    display: flex;
-    color: var(--gray);
-    gap: 2rem;
-    align-items: center;
-}   
-.footer__credits{
-    display: grid;
-    color: var(--gray);
-    padding-left: 1rem;
+
 }
 /*********** END FOOTER CSS ************/
 
