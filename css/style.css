@@ -11,6 +11,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -74,38 +75,44 @@ nav ul li a:hover{
     display: none;
 }
 .toggle_menu span {
-    background-color: var(--white);
+    background-color: var(--primary);
     display: block;
     height: 0.2rem;
     width: 2rem;
     margin-bottom: 0.4rem;
+    border-radius: 0.5rem;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .toggle_menu {
-        display: block;
+    display: block;
+    transition: 0.5s ease-in;
     }
-    nav.open ul{
-    left: 0;
+    nav.open ul {
+    right: -50%;
+    transition: 0.5s ease-in;
     }
-    nav ul{
-    background-color: var(--white);
+    nav ul {  
     display: block;
     position: absolute;
     right: -100%;
     top: 6.5rem;
     height: 100%;
     width: 100%;
-    text-align: center;
+    background-color: white;
+    text-align: left;
+    transition: 0.5s ease-in;
     }
-    nav ul li a{
+    nav ul li a {
     display: block;
     width: 100%;
     padding: 1rem;
+    color: var(--black);
+    border-bottom:  1px solid rgb(220, 220, 220);
     }
-    nav ul li:hover{
+    nav ul li:hover {
     background-color: var(--primary);
     }
-    nav ul li:hover a{
+    nav ul li:hover a {
     color: var(--black);
     }
 }
