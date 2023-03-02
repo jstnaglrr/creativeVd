@@ -24,19 +24,26 @@
                         <h2>Creative <span>Visual</span> Design</h2>
                 </div>
 
-                <nav>
+                <nav class="navBar">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a:active href="about.html">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="updates.html">Updates</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
 
+                <div class="toggle_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
             </div>
 
         </div>
+        
     </header>
 
     <section class="banner_2">
@@ -165,34 +172,45 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
 
-            <div class="footer__wrapper">
-                <div class="footer__links">
+            <div class="footer_wrapper">
+                <div class="footer_links">
 
-                    <nav>
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></i></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
-                        </ul>
-                    </nav>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a> </li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-envelope"></i></i></a></li>
+                    </ul>
 
-                    <p>Baloc Road, Brgy. San Ignacio, San Pablo City, Laguna 4000</p>
+                    <p><small>
+                            Baloc Road, Brgy San ignacio San Pablo City, Laguna
+                    </small></p>
+
                 </div>
 
-                <div class="footer__credits">
-                    <p>©CREATIVEVISUALDESIGN2023</p>
-                </div>
+                <p><small>
+                        &copy;CREATIVEVISUALDESIGN 2023
+                    </small>
+                </p>
 
             </div>
-
         </div>
-            
+
     </footer>
+
+    <script>
+        const nav = document.querySelector(".navBar");
+        const toggle_menu = document.querySelector(".toggle_menu");
+
+        toggle_menu.addEventListener("click",()=>{
+            toggle_menu.classList.toggle("open");
+            nav.classList.toggle("open");
+        });
+    </script>
 
 </body>
 </html>
