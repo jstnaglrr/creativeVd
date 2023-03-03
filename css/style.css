@@ -132,7 +132,7 @@ nav ul li a:hover{
 
 /*********** BANNER CSS ************/
 .banner{
-    padding: 13rem 0 4rem;
+    padding: 13rem 0 6rem;
 }
 .banner__wrapper{
     display: flex;
@@ -144,6 +144,9 @@ nav ul li a:hover{
     }
     .banner img{
         width: 100% !important; 
+    }
+    .banner{
+        padding: 12rem 0 5rem;
     }
 }
 .banner img{
@@ -438,6 +441,23 @@ nav ul li a:hover{
 .banner_2 img{
     width: 30rem;
 }
+@media (max-width: 998px){
+    .banner__wrapper2{
+        display: block;
+        width: 100%;
+    }
+    .banner_2{
+        padding: 9rem 0 2rem;
+        width: 100% !important; 
+    }
+    .banner_content2{
+        display: block;
+        width: 100%;
+    }
+    .banner_2 img{
+        width: 100%;
+    }
+}
 /*********** END ABOUT BANNER CSS ************/
 
 /*********** SECTION TRENDS CSS ************/
@@ -489,13 +509,29 @@ nav ul li a:hover{
     font-size: 15px;
     padding: 1rem;
 }
+@media (max-width: 998px){
+    .section__trendsGridWrapper{
+        display: block;
+        width: 100%;
+    }
+    .section_trends{
+        width: 100% !important; 
+    }
+    .Section__4gridContent{
+        display: block;
+        width: 100%;
+    }
+    .section_trends img{
+        width: 100%;
+    }
+}
 /*********** END SECTION TRENDS CSS ************/
 
 /*********** SERVICES HTML ************/
 
 /*********** SERVICES BANNER CSS ************/
 .banner_3 {
-    padding: 10rem 0;
+    padding: 10rem 0 5rem;
   
 }
 .banner__wrapper3 {
@@ -530,6 +566,31 @@ nav ul li a:hover{
 }
 .banner_3 img{
     width: 30rem;
+}
+@media (max-width: 998px){
+    .banner__wrapper3{
+        display: block;
+        margin: 0 auto;
+    }
+    .banner_content3 img{
+        display: block;
+        margin: 0 auto  ;
+    }
+    .banner_content3 h1{
+        display: block;
+        margin: 1rem;
+        margin-bottom: 2rem;
+        /* text-align: center; */
+    }
+    .banner_content3 p{
+        display: block;
+        margin: 1rem;
+        margin-bottom: 2rem;
+    }
+    .banner_3 img{
+        margin-top: 1rem;
+        width: 100% !important; 
+    }
 }
 
 /*********** SERVICES BANNER 3 CSS ************/
@@ -570,7 +631,31 @@ nav ul li a:hover{
 .services_3 img{
     width: 30rem;
 }
-
+@media (max-width: 998px){
+    .services__wrapper3{
+        display: block;
+        margin: 0 auto;
+    }
+    .services_content3 img{
+        display: block;
+        margin: 0 auto  ;
+    }
+    .services_content3 h1{
+        display: block;
+        margin: 1rem;
+        margin-bottom: 3rem;
+        /* text-align: center; */
+    }
+    .services_content3 p{
+        display: block;
+        margin: 1rem;
+        margin-bottom: 3rem;
+    }
+    .services_3 img{
+        margin-bottom: 3rem;
+        width: 100% !important; 
+    }
+}
 /*********** END SERVICES SECTION 3 CSS ************/
 
 /*********** SERVICES BANNER 4 CSS ************/
@@ -612,13 +697,38 @@ nav ul li a:hover{
 .banner_4 img{
     width: 30rem;
 }
+@media (max-width: 998px){
+    .banner__wrapper4{
+        display: block;
+        margin: 0 auto;
+    }
+    .banner_content4 img{
+        display: block;
+        margin: 0 auto  ;
+    }
+    .banner_content4 h1{
+        display: block;
+        margin: 1rem;
+        margin-bottom: 2rem;
+        /* text-align: center; */
+    }
+    .banner_content4 p{
+        display: block;
+        margin: 1rem;
+        margin-bottom: 2rem;
+    }
+    .banner_4 img{
+        margin-bottom: 2rem;
+        width: 100% !important; 
+    }
+}
 /*********** END SERVICES BANNER 4 CSS ************/
 
 /*********** UPDATE HTML ************/
 
 /*********** SECTION UPDATE CSS ************/
 .updateTrends{
-    padding: 10rem 0;
+    padding: 10rem 0 2rem;
 }
 .updateTrends h2{
     color: var(--primary);
@@ -718,7 +828,6 @@ nav ul li a:hover{
     .updateTrends_topic ul{
         display: block  ;
     }
-}
 @media (max-width: 768px) {
     .footer_wrapper{
         display: block;
