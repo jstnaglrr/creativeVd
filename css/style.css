@@ -617,85 +617,119 @@ nav ul li a:hover{
 /*********** UPDATE HTML ************/
 
 /*********** SECTION UPDATE CSS ************/
-
-.section_update{
-    background-color: var(--white);
+.updateTrends{
+    padding: 10rem 0;
 }
-.section_updateHeading1{
+.updateTrends h2{
+    color: var(--primary);
+    font-size: 48px;
+}
+.updateTrends_topic ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+.updateTrends_topic ul li i{
+    margin-right: 2rem;
+}
+.updateTrends h3{
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+.updateTrends a{
+    color: var(--primary);
+    text-decoration: none;
+    margin-top: 2rem;
+    display: block;
+}
+.border-bottom{
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+.pb-2{
+    padding-bottom: 2rem;
+}
+.updateTrends_topic{
+    padding: 3rem 0;
+}
+.updateTrends_wrapper{
     display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3rem;
+}
+.updateTrends_topic img{
+    width: 100%;
+}
+.categories ul{
+    list-style: none;
+    margin: 2rem 0      ;
+}
+.categories ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+}
+.categories{
+    padding: 2.5rem 0;
+}
+.categories h2{
+    font-size: 25px;
+}
+.thePost{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.recentPost h2{
+    margin-bottom: 3rem;
+    font-size: 25px;
+}
+.thePost h4{
+    margin-bottom: 1rem;
+}
+.recentPost{
+    padding: 3rem 0;
+}
+.tags{
+    padding: 2rem 0;
+}
+.tags a{    
+    border: 2px solid var(--black);
+    display: inline-block;
+    color: var(--black);
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+    margin-right: 1.2rem;
+}
+.bg-dark{
+    background-color: var(--black);
+}
+.t-white{
+    color: var(--white) !important;
+}
 
+@media (max-width: 998px) {
+    .updateTrends_wrapper{
+        grid-template-columns: 1fr;
+    }
+    .updateTrends_topic ul{
+        display: block  ;
+    }
 }
-.section_updateContent{
-    margin: 10rem 0 10rem;
-    margin-bottom: 5rem;
-}
-.section_updateContent h1{
-    color: var(--primary);
-    font-size: 3rem;
-}
-.section_updateContent p{
-    margin-bottom: 4rem;
-}
-.section_links ul li{
-    text-decoration: none;
-    list-style: none;
-    justify-content: space-between;
-    margin-top: 1rem;
-    margin-right: 35rem;
-    font-size: 10px;
-}
-.section_links ul li{
-    display: flex;
-}
-.section_descriptionTitle h3{
-    font-size: 23px;
-    margin-top: 1.5rem;
-    color: var(--primary);
-}
-.section_descriptionTitle p{
-    margin-top: 1rem;
-}
-.section_descriptionTitle a{
-    color: var(--primary);
-}
-.section_descriptionTitle a:hover{
-    color: var(--black);
-}
-/***********************************************/
-.section_updateContent2{
-    /* margin: 10rem 0 10rem; */
-    margin-bottom: 5rem;
-}
-.section_updateContent2 h1{
-    color: var(--primary);
-    font-size: 3rem;
-}
-.section_updateContent2 p{
-    margin-bottom: 4rem;
-}
-.section_links2 ul li{
-    text-decoration: none;
-    list-style: none;
-    justify-content: space-between;
-    margin-top: 1rem;
-    margin-right: 35rem;
-    font-size: 10px;
-}
-.section_links2 ul li{
-    display: flex;
-}
-.section_descriptionTitle2 h3{
-    font-size: 23px;
-    margin-top: 1.5rem;
-    color: var(--primary);
-}
-.section_descriptionTitle2 p{
-    margin-top: 1rem;
-}
-.section_descriptionTitle2 a{
-    color: var(--primary);
-}
-.section_descriptionTitle2 a:hover{
-    color: var(--black);
+@media (max-width: 768px) {
+    .footer_wrapper{
+        display: block;
+    }
+    .footer_links{
+        text-align: center;
+    }
+    .footer_links ul{
+        justify-content: center;
+    }
 }
 /*********** END SECTION UPDATE CSS ************/
+
+/*********** END UPDATE HTML ************/
